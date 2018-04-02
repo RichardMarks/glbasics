@@ -85,6 +85,8 @@ int main (int argc,char* argv[]) {
     printf("failed to create shader\n");
   }
 
+  use_shader(simpleShader);
+
   GLfloat bgColor[] = { 0.2f, 0.4f, 0.6f, 1.0f };
 
   while (!glfwWindowShouldClose(mainWindowPtr)) {

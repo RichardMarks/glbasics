@@ -123,6 +123,12 @@ Shader* create_shader(char* vertSourceFilename, char* fragSourceFilename) {
   return shader;
 }
 
+void use_shader(Shader* shader) {
+  if (shader) {
+    glUseProgram(shader->program);
+  }
+}
+
 void destroy_shader(Shader* shader) {
   if (shader) {
     if (shader->vertSource) {

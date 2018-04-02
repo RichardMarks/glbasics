@@ -10,6 +10,7 @@ typedef struct t_Shader {
 } Shader;
 
 extern Shader* create_shader(char* vertSourceFilename, char* fragSourceFilename);
+extern void use_shader(Shader* shader);
 extern void destroy_shader(Shader* shader);
 
 #endif
